@@ -1,0 +1,108 @@
+/* Estilo global reset e configuração da fonte */
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página com background responsivo */
+
+body {
+    background-color: darkcyan;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+    background-position: right 42vw bottom 45vh, left 45vw top 42vh;
+
+    @media (min-width: 768px) {
+        background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilo da primeira caixa com imagem e borda arredondada */
+
+.box-1 {
+    background-image: url("../img/bg-pattern-card.svg");
+    width: 400px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 img {
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    border: 5px solid white;
+}
+
+/* Estilo da segunda caixa com texto e fundo branco */
+
+.box-2 {
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.text p {
+    margin: 3%;
+}
+
+.profile {
+    font-size: 18px;
+}
+
+/* Estilo da terceira caixa com fundo e borda inferior */
+
+.box-3 {
+    display: flex;
+    background: #ffffff;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.box-3 {
+    border-top: 1px solid #dcdcdc;
+}
+
+.box-3 div {
+    margin: auto;
+}
+
+.box-3 b {
+    font-size: 18px;
+}
