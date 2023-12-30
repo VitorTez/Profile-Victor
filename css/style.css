@@ -10,7 +10,7 @@
 /* Estilo do corpo da página com background responsivo */
 
 body {
-    background-color: darkcyan;
+    background-color: hsl(185, 75%, 39%);
     min-height: 100vh;
     display: flex;
     align-items: center;
